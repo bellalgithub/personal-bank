@@ -14,3 +14,30 @@ body {
 .btn {
     outline: none;
 }
+
+#transaction-area {
+    display: none;
+}
+
+/* deposit area */
+.deposit {
+    background-color: slateblue;
+}
+
+/* Withdraw */
+.withdraw {
+    background-color: lightsalmon;
+}
+
+/* Balance */
+.balance {
+    background-color: orange;
+}
+
+.status {
+    padding: 20px 30px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+
+}

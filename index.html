@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="login-section">
+    <div id="login-section">
         <h1 class="text-center">Welcome to Takia Bank</h1>
         <div class="submit-area">
             <h4>Login</h4>
@@ -23,11 +23,40 @@
             <input type="password" name="" id="" placeholder="Password" class="form-control">
             <br>
 
-            <button class="btn btn-success pb-2">Enter</button>
+            <button id="loginBtn" class="btn btn-success pb-2">Enter</button>
 
         </div>
 
     </div>
+
+    <!-- Transaction Area -->
+
+    <div id="transaction-area">
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="deposit status">
+                    <h5>Deposit</h5>
+                    <h2>$ 00</h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="withdraw status">
+                    <h5>Withdraw</h5>
+                    <h2>$ 00</h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="balance status">
+                    <h5>Balance</h5>
+                    <h2>$ 1200</h2>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js">
+
+        </script>
 
 
 </body>
