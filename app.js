@@ -54,3 +54,27 @@ function spanTextUpdate(id, depositAmountNumber) {
 
 }
 
+// Witdraw button event handler
+
+const withdrawBtn = document.getElementById('withdrawBtn');
+withdrawBtn.addEventListener('click', function () {
+
+
+
+    const withDrawAmount = document.getElementById('addWithdraw').value;
+    const withDrawAmountNumber = parseFloat(withDrawAmount);
+    console.log(withDrawAmountNumber);
+
+    spanTextUpdateWithDraw('currentWithdrawAmount', withDrawAmountNumber);
+    spanTextUpdateWithDraw('currentBalanceAmount', -1 * withDrawAmountNumber);
+})
+
+function spanTextUpdateWithDraw(id, withDrawAmountNumber) {
+    const current = document.getElementById(id).innerText;
+    const currentNumber = parseFloat(current);
+    const totalAmount = currentNumber + withDrawAmountNumber;
+
+    document.getElementById(id).innerText = totalAmount;
+
+}
+
